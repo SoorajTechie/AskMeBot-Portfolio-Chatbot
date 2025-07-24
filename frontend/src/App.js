@@ -23,7 +23,7 @@ function App() {
     appendMessage('Analyzing...', 'bot');
 
     try {
-      const res = await fetch('https://personal-chatbot-backend.onrender.com', {
+      const res = await fetch('https://backend.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ prompt: message }),
