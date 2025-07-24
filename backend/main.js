@@ -10,7 +10,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // ✅ FIXED: Removed trailing slash from CORS origin
-app.use(cors({ origin: 'https://personal-chatbot-sooraj.onrender.com' }));
+app.use(cors({ origin: 'frontend.com' }));
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
